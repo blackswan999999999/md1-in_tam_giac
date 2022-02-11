@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>khó thấy bà nội luôn @@</title>
+</head>
+<body>
+
+</body>
+<script>
+    let i;
+    let j;
+    for (i = 0; i < 5; i++) {
+        document.write('<br>')
+        for (j = 0; j <= i; j++) {
+            document.write('*')
+        }
+    }
+    document.write('<br>')
+    for (i = 0; i < 5; i++) {
+        document.write('<br>');
+        for (j = 4; j - i >= 0; j--) {
+            document.write('*')
+        }
+    }
+
+    document.write('<br>')
+
+    for (i = 0; i < 5; i++) {
+        // console.log('i ===', i);
+        document.write('<br>');
+        for (j = 0; j < 4 - i; j++) {
+            // console.log('j ========', j);
+            document.write('&nbsp&nbsp');
+        }
+        for (k = 4 - i; k < 5; k++) {
+            // console.log('k ==============', k);
+            //chấm được 1* khi i=0,lặp 5 lần in ra 5* khi thời điểm i=4
+            document.write('*');
+        }
+    }
+    document.write('<br>')
+    for (i=0;i<5;i++)
+    {
+        console.log('i ===', i);
+        document.write('<br>');
+        for (j=0;j<i;j++)
+        {
+            //  mục đích khi i=0 lệnh này ko thực hiện, i=1 lặp đc 1 lần---> i=4 lệnh lặp 4 lần ( hàng thứ 5)
+            console.log('j ========', j);
+            document.write('&nbsp&nbsp');
+        }
+        for (k=4-i;k>=0;k--)
+        {
+            console.log('k ==============', k);
+            document.write('*');
+        }
+    }
+
+</script>
+</html>
